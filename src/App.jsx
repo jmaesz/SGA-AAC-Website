@@ -10,8 +10,10 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header />
-      <TabSwitch active={category} onChange={setCategory} />
+      <div className="sticky-top">
+        <Header />
+        <TabSwitch active={category} onChange={setCategory} />
+      </div>
       <main className="app-main">
         <SafetyNotes />
         <ExerciseGrid category={category} />
