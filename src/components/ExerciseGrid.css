@@ -1,0 +1,47 @@
+.grid-section {
+  padding: 20px 0 calc(var(--tab-bar-h) + 20px);
+}
+
+.grid-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.guide-img-card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.guide-img-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 16px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--red);
+  border-bottom: 1px solid var(--border);
+}
+
+.guide-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(1.03);
+  transform-origin: top center;
+}
+
+@media (min-width: 700px) {
+  .grid-section {
+    padding-bottom: 48px;
+  }
+
+  .grid-inner {
+    padding: 0 24px;
+  }
+}

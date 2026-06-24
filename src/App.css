@@ -1,0 +1,50 @@
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 20px 20px calc(var(--tab-bar-h) + 20px);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-hotline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--red);
+  text-decoration: none;
+}
+
+.footer-email {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+@media (min-width: 700px) {
+  .app-footer {
+    padding-bottom: 24px;
+  }
+}

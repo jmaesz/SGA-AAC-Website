@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #C8232C;
+  --red-dark: #a01c23;
+  --red-light: #fdf0f0;
+  --red-mid: #f5d0d0;
+  --bg: #F5F4F1;
+  --card: #ffffff;
+  --text: #1C1C1C;
+  --text-mid: #4a4a4a;
+  --text-muted: #888;
+  --border: #E8E6E1;
+  --tab-bar-h: 68px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Aptos', 'Segoe UI', Calibri, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}

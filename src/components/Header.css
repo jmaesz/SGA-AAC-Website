@@ -1,0 +1,58 @@
+.site-header {
+  background: var(--red);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header-eyebrow {
+  font-family: 'Aptos', 'Segoe UI', Calibri, Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+}
+
+.header-title {
+  font-family: 'Aptos', 'Segoe UI', Calibri, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.header-logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px 8px;
+}
+
+@media (min-width: 600px) {
+  .header-title {
+    font-size: 1.6rem;
+  }
+  .header-logo {
+    height: 60px;
+  }
+}
